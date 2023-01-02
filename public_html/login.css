@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    zoom: 125%;
+	background-color: green;
+    height: 70px;   
+    display: flex;  
+    width: 100%;
+    justify-content: space-between;
+    position:fixed;
+    transition: 0.5s;
+    z-index: 6;
+}
+footer{
+	background-color: #234c63;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    z-index: 6;   
+}
+body{
+    background-color: black;
+    margin-top: -25px;
+    overflow: hidden;
+}
+section{
+    padding-top: 15%;
+    padding-bottom:50%;
+    margin-left: 16%;
+    margin-bottom: 0%;
+    width: 68%;
+    opacity: 100%;
+    min-width: 400px;
+    padding-left: 2px;
+}
+button{
+	margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    border-color: green;
+    border-right: 0px;
+    border-style: outset;
+    font-family: 'Graduate', cursive;
+}
+button:hover{
+    border-style: inset;
+    border-left: 0px;
+}
+button.sidePanelButton{
+    font-size: 80%;
+    color: white;
+    letter-spacing: 0.5px;
+}
+button.sidePanelButton:hover{
+    background-color: rgb(47, 119, 47);
+    height: 100px;
+    transition: 0.5s;
+}
+button.panelButtonLeave{
+    width: 20%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 40%;
+    min-width: 75px;
+    background-color: white;
+    border-color: white;
+}
+button.panelButtonLeave:hover{
+    background-color: rgb(207, 207, 207);
+}
+button.panelButton{
+    height: 100%;
+    font-size: 20px;
+    border-width: 2px;
+    max-width: 40px;
+    min-width: 40px;
+    margin-top: 10px;
+    opacity: 100%;
+    background-color: #ffc045;
+    border-color: #ffc045;
+}
+.loginContainer{
+    position: relative;
+	display: block;
+    width: 15%;
+    height: 100%;
+    margin-right: 10px;
+    margin-top: 28px;
+    margin-bottom: 5px;
+    clip-path: polygon(90% 0%, 83% 25%, 90% 50%, 10% 50%, 10% 0%);
+    min-width: 100px;
+}
+.logButton{
+	background-color: #ffc045;
+    width: 95%;
+    height: 18px;
+    margin-top: -2px;
+    border-color: green;
+    border-width: 1px;
+}
+.logoContainer{
+    margin-top: -3px;
+	display: flex;
+    margin-right: 15%;
+    overflow: hidden; 
+    min-width: 310px;
+}
+.logoContainer.titleImg{
+	margin-top: -34px;
+    min-width: 200px;
+    max-width: 200px;
+}
+.blurContainer{
+    align-items: center;
+    transition: 0.5s;
+}
+#logo{
+    width: 112px;
+    margin-top:25px
+}
+.bg{
+    background-color: #8d7442;
+    background-image: linear-gradient(to bottom right, #234c63, #8d7442);
+}
+.panelContainer{
+    zoom: 125%;
+    height:100%;
+    background-color: #234c63;
+    background-image: linear-gradient(green, #234c63);
+    position:fixed !important;
+    z-index:7;
+    opacity: 100%;
+    margin-top: -13px;
+    padding-left: 5%;
+    min-width: 120px;
+    padding-bottom: 9%;
+    border-right: 2px solid;
+}
+.panelHeader{
+    margin-top: 33px;
+    margin-right: 5%;    
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    background-color: #ffc045;
+    border-color: #ffc045;
+}
+.sectionContainer{
+    overflow: hidden;
+    text-shadow: 4px 6px 4px #000000;
+    transition-duration: 500ms;
+    font-size: 4.5vw;
+    font-family: 'Graduate', cursive;
+    color: white;
+}
+.rightColumnContainer{
+    height:100%;
+    background-color: #ffc045;
+    background-image: linear-gradient(#8d7442, #234c63);
+    position:fixed !important;
+    z-index:5;
+    opacity: 100%;
+    right: 0;
+    padding-left: 17%;
+    padding-bottom: 9%;
+    transition-duration: 500ms;
+}
+.formBox{
+    text-align: center;
+    width: 65%;
+    padding-top: 5%;
+    margin-top: 50px;
+    margin-left: 20%;
+    max-width: 300px;
+    min-width: 200px;
+    color: red;
+    font-family: 'Graduate', cursive;
+    font-size: 130%;
+    margin-bottom: 30%;
+    padding-bottom: 150px;
+    background-color: white;
+    height: 100px;
+    transition-duration: 500ms;
+    box-shadow: 2px 4px 2px #000000;
+}

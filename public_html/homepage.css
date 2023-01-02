@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    zoom: 125%;
+	background-color: green;
+    height: 70px;   
+    display: flex;  
+    width: 100%;
+    justify-content: space-between;
+    position:fixed;
+    transition: 0.5s;
+    z-index: 6;
+}
+footer{
+	background-color: #234c63;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    z-index: 6;   
+}
+body{
+    background-color: #234c63;
+    margin-top: -25px;
+    overflow-x: hidden;
+}
+section{
+    margin-left: 16%;
+    width: 68%;
+    opacity: 100%;
+    min-width: 400px;
+    padding-left: 2px;
+}
+button{
+	margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    border-color: green;
+    border-right: 0px;
+    border-style: outset;
+    font-family: 'Graduate', cursive;
+}
+button:hover{
+    border-style: inset;
+    border-left: 0px;
+}
+button.sidePanelButton{
+    font-size: 80%;
+    color: white;
+    letter-spacing: 0.5px;
+}
+button.sidePanelButton:hover{
+    background-color: rgb(47, 119, 47);
+    height: 100px;
+    transition: 0.5s;
+}
+button.panelButtonLeave{
+    width: 20%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 40%;
+    min-width: 75px;
+    background-color: white;
+    border-color: white;
+}
+button.panelButtonLeave:hover{
+    background-color: rgb(207, 207, 207);
+}
+button.panelButton{
+    height: 100%;
+    font-size: 20px;
+    border-width: 2px;
+    max-width: 40px;
+    min-width: 40px;
+    margin-top: 10px;
+    opacity: 100%;
+    background-color: #ffc045;
+    border-color: #ffc045;
+}
+.loginContainer{
+    position: relative;
+    display: block;
+    width: 15%;
+    height: 100%;
+    margin-right: 10px;
+    margin-top: 28px;
+    margin-bottom: 5px;
+    clip-path: polygon(90% 0%, 83% 25%, 90% 50%, 10% 50%, 10% 0%);
+    min-width: 100px;
+}
+.logButton{
+	background-color: #ffc045;
+    width: 95%;
+    height: 18px;
+    margin-top: -2px;
+    border-color: green;
+    border-width: 1px;
+}
+.logoContainer{
+    margin-top: -3px;
+	display: flex;
+    margin-right: 20%;
+    overflow: hidden; 
+    min-width: 310px;
+}
+.logoContainer.titleImg{
+	margin-top: -34px;
+    min-width: 200px;
+    max-width: 200px;
+}
+.blurContainer{
+    align-items: center;
+    transition: 0.5s;
+}
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#banner{
+    width: 100%;
+    filter: brightness(70%);
+    margin-bottom: 5px;
+    margin-top: calc(50px - 7%);
+}
+#banner:hover{
+    filter: brightness(100%);   
+}
+#logo{
+    width: 112px;
+    margin-top:25px
+}
+#tile1{
+    padding-top: 0px;
+    width: 49%;
+    filter: brightness(70%);
+}
+#tile1:hover{
+    filter: brightness(100%); 
+}
+#tile2{
+    width: 98%;
+    filter: brightness(70%);
+}
+#tile2:hover{
+    filter: brightness(100%); 
+}
+#tile3{
+    width: 100%;
+    filter: brightness(70%);
+}
+#tile3:hover{
+    filter: brightness(100%); 
+}
+#tile4{
+    filter: brightness(70%);
+}
+#tile4:hover{
+    filter: brightness(100%); 
+}
+#tile5{
+    filter: brightness(60%);
+    width: 50%;
+    margin-top: -3%;
+}
+#tile5:hover{
+    filter: brightness(100%); 
+}
+#tile6{
+    filter: brightness(70%);
+    width: 100%;
+    height: auto;
+    max-height: 66%;
+    margin-top: -10%;
+}
+#tile6:hover{
+    filter: brightness(100%); 
+}
+.bg{
+    background-color: #8d7442;
+    background-image: linear-gradient(to bottom right, #234c63, #8d7442);
+}
+.panelContainer{
+    zoom: 125%;
+    height:100%;
+    background-color: #234c63;
+    background-image: linear-gradient(green, #234c63);
+    position:fixed !important;
+    z-index:7;
+    opacity: 100%;
+    margin-top: -13px;
+    padding-left: 5%;
+    min-width: 120px;
+    padding-bottom: 9%;
+    border-right: 2px solid;
+}
+.panelHeader{
+    margin-top: 33px;
+    margin-right: 5%;    
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    background-color: #ffc045;
+    border-color: #ffc045;
+}
+.sectionContainer{
+    overflow: hidden;
+    text-shadow: 4px 6px 4px #000000;
+    transition-duration: 500ms;
+    font-size: 4.5vw;
+    font-family: 'Graduate', cursive;
+    color: white;
+}
+.bannerContainer{
+    font-size: 4.5vw;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 4;
+}
+.bannerContent{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    z-index: 1;
+    opacity: 70%;
+}
+.tile1Container{
+    width: 102%;
+    position: relative;
+    z-index: 3;
+    margin-top: -28%;
+    font-size: 4.5vw;
+}
+.tile1Content{
+    text-align: center;
+    position: absolute;
+    top: 29%;
+    left: 24%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 70%;
+    margin-bottom: -20%;
+    margin-top: 20%;
+}
+.tile2Container{
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    margin-left: -3%;
+    font-size: 4.5vw;
+}
+.tile2Content{
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    z-index: 1;
+    opacity: 70%;
+    left: 15%;
+}
+.tile3Container{
+    text-align: center;
+    position: relative;
+    font-size: 4.5vw;
+    z-index: 4;
+    margin-top: -9%;
+    width: 100%;
+    display: inline-flex;
+}
+.tile3Content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    z-index: 1;
+    opacity: 70%;
+}
+.tile4Container{
+    font-size: 4.5vw;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    margin-top: -3%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+}
+.tile4Content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    z-index: 1;
+    opacity: 70%;
+}
+.tile5Container{
+    font-size: 4.5vw;
+    display: inline;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    margin-top: -3%;
+}
+.tile5Content{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    opacity: 70%;
+    margin-left: 31%;
+    margin-top: 35%;
+}
+.tile6Container{
+    font-size: 4.5vw;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: inline-flex;
+    z-index: 0;
+}
+.tile6Content{
+    text-align: center;
+    position: absolute;
+    top: 29%;
+    z-index: 1;
+    opacity: 70%;
+    margin-left: 28%;
+}
+.rightColumnContainer{
+    height:100%;
+    background-color: #ffc045;
+    background-image: linear-gradient(#8d7442, #234c63);
+    position:fixed !important;
+    z-index:5;
+    opacity: 100%;
+    right: 0;
+    padding-left: 17%;
+    padding-bottom: 9%;
+    transition-duration: 500ms;
+}
+.tableContainer{
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 55%;
+    margin-left: -10%;
+    margin-right: -1%;
+    
+    transition-duration: 500ms;
+    font-size: 250%;
+    font-family: 'Verdana', cursive;
+    color: white;
+    background-color: black;
+    opacity: 75%;
+    backface-visibility: 50%;
+}
+table{
+    padding-top: calc(100px - 5%);
+    color: black;
+    table-layout: fixed;
+    
+}
+th{
+    background-color: darkgrey;
+    text-align: left;
+}
+td{
+    background-color: lightgrey;
+}
+.semesterTableData{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-right: -5%;
+    padding-top: 20px;
+}
+.leftCarrot{
+    background-color: black;
+    color: white;
+    width: 50px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.rightCarrot{
+    background-color: black;
+    color: white;
+    width: 50px;
+    float: right;
+    padding-right: 15px;
+    padding-top: 20px;
+
+}
+.semesterTableDay{
+    min-width: 75px;
+    font-family: times-new-roman, serif;
+    text-align: center;
+}
+.semesterTableTitle{
+    display: flex;
+    width: 100%;
+    padding-right: 60px;
+}
+.semesterTableDescription{
+    width: 100%;
+    float: left;
+    height: 100%;
+    font-size: 20px;
+    padding-right: 60px;
+}

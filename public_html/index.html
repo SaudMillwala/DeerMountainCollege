@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+    <head>
+            <link rel='stylesheet' type='text/css' href='homepage.css'>
+            <script src="homepage.js"></script>
+            <meta charset = "utf-8">
+            <title>Homepage</title>
+
+    </head>
+    <body>
+        <div id="blur" class="blurContainer" >
+            <aside class="panelContainer" style="display:none" id="myPanel">
+                <div>
+                    <button onclick="panelClose()" class="panelHeader">Close X</button>
+                </div>
+                <div>
+                    <button onclick = "window.location.href = 'course-catalog.php'" class='sidePanelButton'>Course<br>Catalog</button>
+                </div>
+                <div>
+                    <button onclick = "window.location.href = 'degree-programs.php'" class='sidePanelButton'>Degree<br>Programs</button>
+                </div>
+                <div>
+                    <button onclick = "window.location.href = 'master_schedule.php'" class='sidePanelButton'>Master<br>Schedule</button>
+                </div>
+                <div>
+                    <button onclick = "window.location.href = 'academic_calendar.php'" class='sidePanelButton'>Academic<br>Calender</button>
+                </div>
+                <div>
+                    <button onclick = "window.location.href = 'departments-courses.php'" class='sidePanelButton'>Departments<br>& Courses</button>
+                     </div>
+                <div>
+                    <button onclick = "window.location.href = 'about.html'" class='sidePanelButton'>About Us</button>
+                </div>
+            </aside>
+            <aside class = "rightColumnContainer" id="rightColumnContainer">
+                <div>
+                </div>
+            </aside>
+            <div class="bg">
+
+                <header id="header">
+                    <div class = logoContainer>
+                        <button onclick="panelOpen()" class='panelButton' id='panelButton'>☰</button>
+                        <img src="https://i.imgur.com/ZSJeGdX.png" id="logo" alt="logo" onclick = "window.location.href = 'index.html'">
+                        <img src="https://i.imgur.com/4WU9EeP.png" alt="titleImg" class=' logoContainer titleImg' height="150px" onclick = "window.location.href = 'index.html'">
+                    </div>
+
+                    <div class = loginContainer>
+                        <button class = logButton onclick = "window.location.href = 'login.php'">LOGIN</button><br>
+                        <button class = logButton onclick = "window.location.href = 'index.html'">HOMEPAGE</button>
+                    </div>
+                </header>
+                <section>
+                    <div class="sectionContainer"><br>
+                        <div class="bannerContainer"  onclick = "window.location.href = 'course-catalog.php'">
+                            <div class="bannerContent" id="bannerContent" style="pointer-events: none;
+                            ">Course<br>Catalog</div>
+                            <img src="https://i.imgur.com/WTP5gVj.png" alt="banner" id="banner">
+                        </div>
+                        <div class="tile1Container">
+                            <div class="tile1Content" id="tile1Content" style="pointer-events: none;
+                            ">Degree<br>Programs</div>
+                            <img src="https://i.imgur.com/qd6Topk.jpg" alt="tile1" id="tile1">
+                            <div class="tile2Container" onclick = "window.location.href = 'master_schedule.php'">
+                                <div class="tile2Content" id="tile2Content" style="pointer-events: none;
+                                ">Master<br>Schedule</div>
+                                <img src="https://i.imgur.com/IBTdFDT.jpg" alt="tile2" id="tile2"><br>
+                            </div>
+                        </div>
+                        <div class="tile3Container" onclick = "window.location.href = 'academic_calendar.php'">
+                            <div class="tile3Content" id="tile3Content" style="pointer-events: none;
+                            ">Academic<br>Calender</div>
+                            <img src="https://i.imgur.com/P0Nux1h.jpg" alt="tile3" id="tile3" margin-bottom="-50px">
+                        </div>
+                        <div class="tile4Container" onclick = "window.location.href = 'departments-courses.php'">
+                            <div class="tile4Content" id="tile4Content" style="pointer-events: none;
+                            ">Departments<br>& Courses</div>
+                            <img src="https://i.imgur.com/mztlpYS.png" alt="tile4" id="tile4" margin-bottom="-50px">
+                        </div>
+                        <div class="tile5Container" id="tile5Container" onclick = "window.location.href = 'login.php'">
+                            <div class="tile5Content" id="tile5Content" style="pointer-events: none;
+                            ">Login</div>
+                            <img src="https://i.imgur.com/PAXfi4A.png" alt="tile5" id="tile5">
+                            <div class="tile6Container">
+                            <div class="tile6Content" id="tile6Content" style="pointer-events: none;
+                                ">About<br>Us</div>
+                                <img src="https://i.imgur.com/qQbuMEK.jpg" alt="tile6" id="tile6"><br>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <footer>
+            <div></div>
+        </footer>
+    </body>
+</html>
